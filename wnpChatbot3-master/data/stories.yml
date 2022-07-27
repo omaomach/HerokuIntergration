@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: happy browser_links
+  steps:
+    - intent: play_video
+    - action: action_video
+
+- story: happy fallback
+  steps:
+   - intent: out_of_scope
+   - action: utter_out_of_scope
+
+# - story: name path
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: tell_name
+#     - action: utter_name
+#     - action: utter_your_name
+#     - intent: your_name
+#       entities:
+#       - name: "Joash"
+#     - slot_was_set:
+#       - name: "Joash"
+#     - action: utter_phone_number
+#     - intent: phone_number
+#       entities:
+#       - number: "0728748441"
+#     - slot_was_set:
+#       - number: "0728748441"
+#     - action: utter_thanks

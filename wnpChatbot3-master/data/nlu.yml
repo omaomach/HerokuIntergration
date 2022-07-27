@@ -1,0 +1,144 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: tell_name
+  examples: |
+    - whats your name?
+    - tell me your name
+    - what should I call you
+    - what is your name?
+
+- intent: your_name
+  examples: |
+    - my name is [Pres]{"entity":"name","value":"Pres"}
+    - my name is [Joash]{"entity":"name","value":"Joash"}
+    - my name is [Joel]{"entity":"name","value":"Joel"}
+    - [Pres]{"entity":"name","value":"Pres"}
+    - [Joash]{"entity":"name","value":"Joash"}
+    - [Joel]{"entity":"name","value":"Joel"}
+
+- intent: phone_number
+  examples: |
+    - My number is [0728748441]{"entity":"number"}
+    - [0728748441]{"entity":"number"}
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: play_video
+  examples: |
+    - please open the link
+    - play the video
+    - open the url link in browser
+    - show me the images
+    - link me to the page
+
+- intent: out_of_scope
+  examples: |
+    - who is the president of Kenya
+    - I want to order food
+
+- intent: faq/ask_docinfo
+  examples: |
+    - Can you link me to a doctor?
+    - are there doctors linked to this website?
+
+- intent: faq/ask_services
+  examples: |
+    - what services does this website offer
+    - can I but medicine through this website
+
+- intent: faq/ask_time
+  examples: |
+    - how long will it take for you to link me to a doctors
+    - I need to be linked to a doctors urgently
+    - I need a doctor
+
+

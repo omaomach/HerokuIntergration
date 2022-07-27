@@ -1,0 +1,24 @@
+{
+  "utter_faq/ask_docinfo": [
+    {
+      "image": "https://github.com/omaomach/wnpChatbot3",
+      "text": "My name is Pres, a bot powered by Wellness and Prevention"
+    },
+    {
+      "text": "My name is Pres"
+    }
+  ],
+  "utter_faq/ask_services": [
+    {
+      "text": "We offer medical services, from drug prescriptions to meetups with our doctors"
+    },
+    {
+      "text": "How do you feel, I can link you to one of our doctors right now"
+    }
+  ],
+  "utter_faq/ask_time": [
+    {
+      "text": "I will link you to a doctor in a matter of seconds"
+    }
+  ]
+}
